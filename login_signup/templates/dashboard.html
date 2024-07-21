@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock title %}
+{% block body %}
+<h3>Hello {{f_name}} {{l_name}}! </h3>
+<div class="card-group">
+    <div class="row row-cols-3">
+        {% for news in all_news %}
+        <div class="col mt-5">
+          <div class="card h-100">
+            <img src={{news.urlToImage}} class="card-img-top img-fluid" alt="News Image">
+            <div class="card-body">
+              <h5 class="card-title">{{news.title}}</h5>
+              <p class="card-text">{{news.description}}</p>
+              <p class="card-text"><small class="text-muted">{{news.author}}</small></p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock body %}
