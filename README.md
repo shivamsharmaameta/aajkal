@@ -4,22 +4,22 @@ For running the project, first you will need Python Interpreter (python.org).
 Then, you will require to install following two packages :-
 
 
-Django - pip install django
+## Django - pip install django
 
-Requests - pip install requests
+## Requests - pip install requests
 
 Then, locate the manage.py file and run the following commands to dump database :-
 
 
-python manage.py makemigrations
+# python manage.py makemigrations
 
-python manage.py migrate
+# python manage.py migrate
 
 
 To start development server :-
 
 
-python manage.py runserver
+# python manage.py runserver
 
 
 
